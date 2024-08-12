@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Attendee Registration</title>
+</head>
+<style>
+    .virtual{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        flex-wrap: wrap;
+        flex:1; 
+    }
+
+    .table{
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class="virtual">
+        <table border="3">
+            <tr>
+                <td colspan="3" class="table"><h1>VIP Registration</h1></td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" name="fname" placeholder="First Name">
+                    <input type="text" name="lname" placeholder="Last Name">
+                </td>
+                <td rowspan="3">
+                    Do you require ADA accomodations(closed captioning, etc)
+                    <br>
+                     to attend this virtual meeting ? Please Describe.
+                    <br>
+                    <textarea placeholder=".">Write here...</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="email" placeholder="Enter email Address">
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+        
+                  <td class="table">
+                    <input type="radio" name="gender" value="Male" placeholder=".">Male
+                    <input type="radio" name="gender" value="Female" placeholder=".">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>
+                    <input type="digit" name="phone" placeholder="Enter Phone Number">
+                </td>
+                <td rowspan="2">
+                    Do you like to volunteer as a session moderator ?
+                    <br>
+                    <br>
+                    <input type="radio" name="gender" value="Male" placeholder=".">Male
+                    <input type="radio" name="gender" value="Female" placeholder=".">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Time Zone</td>
+                <td>
+                    <input type="text" name="zone" placeholder=".">
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">Preferred Shipping Address</td>
+                <td rowspan="2">
+                    <input type="text" name="address" placeholder="Enter Address">
+                </td>
+                <td>Please share the name who will attend with you virtually
+                    <br>
+                     together
+                    <br>
+                    <input type="text" name="text" placeholder="Enter Name">
+                </td>
+            </tr>
+        </table>
+    </div>   
+</body>
+</html>

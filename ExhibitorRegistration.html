@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibitor Registration</title>   
+</head>
+<style>
+    .exhibitor{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        flex-wrap: wrap;
+         flex:1;
+    }  
+
+    .table{
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div class="exhibitor">
+
+    <table border="3">
+        <tr>
+            <td colspan="3" class="table"><h1>Exhibitor Registration</h1></td>
+        </tr>
+        <tr>
+            <td>Prefix</td>
+            <td>
+                <input type="text" name="prefix" placeholder="Prefix">
+            </td>
+            <td rowspan="3">
+                Company Description
+                <br>
+                <textarea placeholder=".">Write here...</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>
+                <input type="text" name="fname" placeholder="First Name">
+                <br>
+                <input type="text" name="lname" placeholder="Last Name">
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Preferred Pronouns</td>
+            <td>
+                <input type="text" name="pronoun" placeholder="pronoun">
+            </td>
+        </tr>
+        <br>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input type="email" name="email" placeholder="Email Address">
+            </td>
+            <td rowspan="2">
+                Product/Services to Exhibit
+                <br>
+                <textarea placeholder=".">Write here...</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Work Phone</td>
+            <td>
+                <input type="digit" name="phone" placeholder="Phone Number">
+            </td>
+        </tr>
+       <br>
+       <tr>
+     <td>Cell Phone</td>
+     <td>
+        <input type="digit" name="phone" placeholder="Phone Number">
+     </td>
+     <td rowspan="3">
+     What type of booth do you like ?
+     <br>
+     <input type="radio" name="booth" value="In-person" placeholder=".">In-person booth only
+     <br>
+     <input type="radio" name="booth" value="Virtual" placeholder=".">Virtual booth only
+     <br>
+     <input type="radio" name="booth" value="Virtual and In-person" placeholder=".">Virtual and In-person Booth
+     <br>
+     </td>
+       </tr>
+       <tr>
+        <td >Job Title</td>
+        <td>
+            <input type="text" name="title" placeholder="title">
+        </td>
+       </tr>
+
+       <tr>
+        <td >Company</td>
+        <td >
+            <input type="text" name="Company" placeholder="Enter Company Name">
+        </td>
+       </tr>
+
+       <tr>
+        <td rowspan="2">Full Business Address</td>
+        <td rowspan="2">
+            <input type="text" name="address" placeholder="Enter Address">
+        </td>
+        <td rowspan="2">
+            List your staff(name,email,phone)
+            <br>
+            <textarea placeholder=".">Write here...</textarea>
+        </td>
+       </tr>
+
+    
+     
+    </table>
+
+    </div>
+</body>
+</html>

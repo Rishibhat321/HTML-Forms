@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaker Registration</title>
+</head>
+<style>
+    .speaker{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        flex-wrap: wrap;
+        flex:1;
+    }
+
+    .table{
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class="speaker">
+
+    <table border="3" >
+        <tr>
+            <td colspan="3" class  ="table"><h1>Speaker Registration</h1></td>
+        </tr>
+        <tr>
+            <td>Prefix</td>
+            <td>
+                <label></label>
+                <input type="text" name="prefix" placeholder="Prefix">
+            </td>
+            <td rowspan="3">What is your presentation type?<br>
+            <input type="radio" name="Lecture" value="Lecture" placeholder=".">Lecture<br>
+            <input type="radio" name="Case Study" value="Case Study" placeholder=".">Case Study<br>
+            <input type="radio" name="Group Discussion" value="Group Discussion" placeholder=".">Group Discussion<br>
+            <input type="radio" name="Product Demo" value="Product Demo" placeholder=".">Product Demo<br>
+            </td>
+
+        </tr>
+        <tr>
+           
+            <td>Name</td>
+            <td>
+                <input type="text" name="fname" placeholder="Enter First Name">
+                <br>
+                <br>
+                <input type="text" name="lname" placeholder="Enter Last Name">
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>
+                <input type="email" name="email" placeholder="Enter email Address">
+            </td>
+        </tr>
+        <tr>
+            <td>Job Title</td>
+            <td>
+                <input type="digit" name="phone" placeholder="Enter Phone Number">
+            </td>
+            <td rowspan="2">
+          Please share the title of your presentation/speech
+          <br>
+          <br>
+          <input type="text" name="title" placeholder=".">
+          
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Affilation/Company Organization
+                </td>
+                <td>
+                <input type="text" name="company" placeholder="Enter Company Name">
+           </td>
+        </tr>
+        
+        <tr>
+            <td>Location</td>
+            <td>
+                <input type="text" name="location" placeholder="Enter Location">
+            </td>
+            <td rowspan="3">
+          Do you have any needs from a moderator?
+          <br>
+          <br>
+          <input type="text" name="needs" placeholder=".">
+            </td>
+        </tr>
+        <tr>
+            <td>Do you need assistance with your flight reservation ?</td>
+            <td>
+                <input type="radio" name="assist" value="Yes" placeholder=".">Yes
+                <input type="radio" name="assist" value="No" placeholder=".">No
+            </td>
+        </tr>
+    </table>
+
+</div>
+</body>
+</html>

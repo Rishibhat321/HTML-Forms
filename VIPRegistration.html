@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Registration</title>
+</head>
+<style>
+    .vip{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+        flex-wrap: wrap;
+        flex:1;
+    }
+
+    .table{
+        text-align: center;
+    }
+
+</style>
+<body>
+    <div class="vip">
+        <table border="3">
+            <tr>
+                <td colspan="3" class="table"><h1>VIP Registration</h1></td>
+            </tr>
+            <tr>
+                <td>Prefix</td>
+                <td>
+                    <input type="text" name="prefix" placeholder="Prefix">
+                </td>
+                <td rowspan="2">
+                    Where do you want to be picked up ?
+                    <br>
+                    <br>
+                    <input type="text" name="pick" placeholder="Enter location">
+                </td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" name="fname" placeholder="First Name">
+                    <br>
+                    <input type="text" name="lname" placeholder="Last Name">
+                </td>
+            </tr>
+            <tr>
+                <td>Preferred Pronouns</td>
+                <td>
+                    <input type="text" name="pronoun" placeholder="pronoun">
+                </td>
+                <td rowspan="2">
+                    Where do you want to be dropped off ?
+                    <br>
+                    <input type="text" name="drop" placeholder="Enter location">
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="email" placeholder="Enter email address">
+                </td>
+            </tr>
+            <tr>
+                <td>Work Phone</td>
+                <td>
+                    <input type="digit" name="phone" placeholder="Enter phone number">
+                </td>
+                <td rowspan="2">
+                    Will your spouse attend ? Leave name and contact info if so.
+                    <br>
+                    <input type="text" name="text" placeholder="Enter details">
+                </td>
+            </tr>
+            <tr>
+                <td>Cell Phone</td>
+                <td>
+                    <input type="digit" name="phone" placeholder="Enter phone number">
+                </td>
+            </tr>
+            <tr>
+                <td>Job Title</td>
+                <td>
+                    <input type="text" name="title" placeholder="Enter Title">
+                </td>
+                <td rowspan="2">
+                    Are you interested in attending the VIP Networking Event ?
+                    <br> 
+                    <input type="radio" name="vip" value="Yes" placeholder=".">Yes
+                    <input type="radio" name="vip" value="No" placeholder=".">No
+                </td>
+            </tr>
+            <tr>
+                <td>Company</td>
+                <td>
+                    <input type="text" name="company" placeholder="Company Name">
+                </td>
+            </tr>
+            <tr>
+                <td>Flight arrival time (to be picked up)</td>
+                <td>
+                    <input type="text" name="arrive" placeholder=".">
+                </td>
+                <td rowspan="2">
+                    Would you like to be sent event gifts ?
+                    <br>
+                    <input type="radio" name="vip" value="Yes" placeholder=".">Yes
+                    <input type="radio" name="vip" value="No" placeholder=".">No
+                </td>
+            </tr>
+            <tr>
+                <td>Flight Departure Time</td>
+                <td>
+                    <input type="text" name="depart" placeholder=".">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html
